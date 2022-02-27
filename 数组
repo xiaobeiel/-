@@ -1,0 +1,38 @@
+/*
+2022年2月25日17点30分
+方法调用的三个方法
+保存
+* */
+public class getMax {
+    public static void main(String[] args) {
+          //1、方法名（参数）
+          isGetMax(13,14);
+          //2、定义一个变量，方法名（定义变量名）
+          int a,b;
+          a=15;
+          b=11;
+          isGetMax(a,b);
+          //3、数据类型 变量名 = 方法名（参数）
+          int m =isGetMax(98,89);
+          System.out.println(m);
+
+          boolean max = isEvenNumber(15);
+          System.out.println(max);
+    }
+    public static int isGetMax(int a,int b){
+        if(a > b){
+           // System.out.println(a);
+            return a;
+        }
+        else{
+           // System.out.println(b);
+            return b;
+        }
+    }
+    public static boolean isEvenNumber(int number){
+        if(number%2==0)
+            return true;
+        else
+            return false;
+    }
+}
